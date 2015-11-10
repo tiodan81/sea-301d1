@@ -1,25 +1,30 @@
 # Summary
 
 
-Week 1 (Weeks 3-4 part time) the VIEW:
+Week 1 daytime track (Weeks 3-4 nights & weekend track) the VIEW:
 
-* [jQuery DOM Maniupulation](week-1)
-* [jQuery Events](week-1)
-* [Responsive Design](week-1)
-* [Responsive Design II](week-1)
-* [Week 1 Assignment](week-1)
+* [jQuery DOM Manipulation](class-01-jquery-and-the-dom)
+* [jQuery Events](class-02-jquery-and-events)
+* [Responsive Design](class-03-responsible-mobile-first)
+* [Responsive Design II](class-04-templates)
+* [Assignment 1](class-05-assignment-1)
 
-Week 2 (Weeks 1-2 part time) the MODEL:
+Week 2 daytime track (Weeks 1-2 nights & weekend) the MODEL:
 
-* [Persistence](week-2/day-1/README.md)
-* [CRUD a Resource](week-2/day-2/README.md)
-* [Functional Data Processing](week-2/day-3/README.md)
-* [Relational Data](week-2/day-4/README.md)
-* [Week 2 Assignment]()
+* [Persistence](class-06-persistance)
+* [CRUD a Resource](class-07-crud)
+* [Functional Data Processing](class-08-functional-data-processing)
+* [Relational Data](class-09-relational-data)
+* [Assignment 2](class-10-assignment-2)
 
-Week 3 (Weeks 5-6 part time) the CONTROLLER:
+Week 3 daytime track (Weeks 5-6 nights & weekend track) the CONTROLLER:
 
-* [AJAX]()
-* [REST]()
-* [APIs]()
-* [APIs]()
+* [AJAX](class-11-ajax)
+* [REST](class-12-rest)
+* [APIs](class-13-apis-1)
+* [APIs](class-14-apis-2)
+* [Assignment 3](class-15-assignment-3)
+
+Week 4 daytime track (Weeks 7-8 nights & weekend track):
+
+* Project Week and Presentations
