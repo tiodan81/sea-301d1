@@ -1,7 +1,7 @@
 # Summary
 
 
-Week 1 daytime track (Weeks 3-4 nights & weekend track) the VIEW:
+Week 1 daytime track (Weeks 1-2 nights & weekend track) the VIEW:
 
 * [jQuery DOM Manipulation](class-01-jquery-and-the-dom)
 * [jQuery Events](class-02-jquery-and-events)
@@ -9,7 +9,7 @@ Week 1 daytime track (Weeks 3-4 nights & weekend track) the VIEW:
 * [Responsive Design II](class-04-templates)
 * [Recap and Pair Project 1](class-05-recap-pair-project)
 
-Week 2 daytime track (Weeks 1-2 nights & weekend) the MODEL:
+Week 2 daytime track (Weeks 3-4 nights & weekend) the MODEL:
 
 * [Persistence](class-06-ajax-and-json)
 * [Functional Programming](class-07-functional-programming)
