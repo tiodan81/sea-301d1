@@ -156,7 +156,7 @@ blog.rawData = [
   },
   {
     title:       'Office Ipsum',
-    category:    'lifestyle',
+    category:    'business',
     author:      'Michael Scott',
     authorUrl:   'https://en.wikipedia.org/wiki/Michael_Scott_(The_Office)',
     publishedOn: '2015-10-18',
