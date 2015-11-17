@@ -1,6 +1,3 @@
-var blog = {};
-blog.articles = [];
-
 blog.rawData = [
   {
     title:       'Bacon Ipsum',
