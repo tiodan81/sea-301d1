@@ -30,14 +30,14 @@ You should get a response that says "works". If not, try reinstalling Node again
 
 Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your Terminal (Git Bash on Windows) and enter:
 
-`npm -g i eslint live-server`.
+`npm -g i eslint live-server`
 
  You should see a lot of feedback as it installs.
 
 ### Verify the Node packages installation
 Now let's verify that it is installed. Enter the following into your terminal:
 
-`npm list -g --depth=0`.
+`npm list -g --depth=0`
 
 You should get a list back that lists linter and linter-eslint.
 
