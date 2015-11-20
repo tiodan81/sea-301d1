@@ -9,13 +9,16 @@
   **Linux instructions**
   
   To install Node, open your Terminal, and enter:
+  
   `apt-get install node`
 
   **Mac instructions**
   
   If you took Code 201, you should already have Homebrew installed. If you have not, follow the guide on [this page](https://github.com/codefellows/code-201-prework/blob/master/prework/mac/2_homebrew.md#install-homebrew).
-   To install Node, open your Terminal, and enter:
-   `brew install node`
+  
+  To install Node, open your Terminal, and enter:
+   
+  `brew install node`
 
   **Windows instructions**
   
@@ -23,7 +26,9 @@
 
 ### Verify the Node installation
 Now let's verify that it is installed. Enter the following into your terminal:
+
 `node -e 'console.log("works")`
+
 You should get a response that says "works". If not, try reinstalling Node again
 
 ## Install eslint and live-server Node packages
