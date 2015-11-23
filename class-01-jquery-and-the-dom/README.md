@@ -20,4 +20,4 @@ Let these user stories guide your development:
   - Create the markup for an example Article in the DOM, then use jQuery to clone that for each article.
   - Your Article prototype should have a `.toHtml()` function that adds new data to the DOM.
   - Add basic styles: a css reset, content in a single centered column, reasonable margins, etc.
-  - Your blog should end up looking [something like this](http://hijk.it/image/1l402M1Y0q3K/Screen%20Shot%202015-11-23%20at%2012.19.46%20PM.png)
+  - Your blog should end up looking [something like this](http://hijk.it/image/1l402M1Y0q3K/Screen%20Shot%202015-11-23%20at%2012.19.46%20PM.png).
