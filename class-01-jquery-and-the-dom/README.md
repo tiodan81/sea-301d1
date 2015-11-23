@@ -3,11 +3,11 @@
 ## Welcome to your new blog!
 
 - You will create a static blog site, to represent your personal online presence.
-- You will be given a file [blogArticles.js](blogArticles.js), that adds an array of ready-to-use blog posts to a `blog` JS object (that you will have to create).
+- Please use the included file: [blogArticles.js](blogArticles.js), that adds an array of ready-to-use blog posts to a `blog` JS object (that you will have to create).
 
 ## User Stories for Class 1
 Let these user stories guide your development:
- - As a developer, I want my site to use valid and semantic markup, so that employers will love me.
+ 1. As a developer, I want my site to use valid and semantic markup, so that employers will love me.
  - As a reader, I want the blog to show most recent articles on top so that I can easily read the latest.
  - As a reader, I want relative timestamps to give me a idea of how many days ago something was written.
  - As an author, I want my name linked to my site, so that readers can learn more about me.
