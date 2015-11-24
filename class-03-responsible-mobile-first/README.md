@@ -11,4 +11,4 @@ Let's develop some responsive super-powers. Follow along with these user stories
  - Be sure to use proper `viewport` settings.
  - Use mobile-first design principles when adding CSS.
  - Add new styles in media queries as needed to make the page look good on desktop screens.
- - Optionally, include styles for tablet displays.
+ - For bonus points, include styles for tablet displays.

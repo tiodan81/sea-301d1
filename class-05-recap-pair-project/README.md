@@ -16,6 +16,7 @@ We'll use a special html page, not linked from the main page, that will allow yo
  - As an author, I want a form fields for all the article properties, so that I can customize each aspect of my article.
  - As an author, I want to write in Markdown, so that I can easily control formatting.
  - As an author, I want a live preview of how my post looks, so that I know if I screw up the markdown.
+ - As an author, I want code samples to have syntax highlighting, so that my readers see code as it should appear.
  - As an author, I want an export of the final article, so that I can paste it into blogArticles.js to publish it.
 
 
@@ -24,4 +25,5 @@ We'll use a special html page, not linked from the main page, that will allow yo
  - Continue to use mobile-first development practices.
  - Use the same template code to preview the draft article.
  - Verify that your exported data can be copy/pasted into `blogArticles.js` to be published.
+ - Integrate libraries to help with markdown and syntax highlighting.
  - Bonus points if the new article page is responsive!
