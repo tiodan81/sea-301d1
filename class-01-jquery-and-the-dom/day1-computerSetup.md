@@ -4,7 +4,7 @@
 
   If you haven't already, install [Atom](https://atom.io). Atom is similar to Sublime Text in that it is also a text editor. Atom however, is free, open-source, and cross-platform. Please use Atom during Code 301.
   
-  Atom's [documentation](https://atom.io/docs/v1.2.3/) is top-notch. Go check it out. Make sure you're looking at the docs for the latest version.
+  Atom's [documentation](https://atom.io/docs/latest) is top-notch. Go check it out. Make sure you're looking at the docs for the latest version.
 
 ## Install Node
 
