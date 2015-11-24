@@ -29,7 +29,7 @@
 ### Verify the Node installation
 Now let's verify that it is installed. Enter the following into your terminal:
 
-`node -e 'console.log("works")`
+`node -e 'console.log("works")'`
 
 You should get a response that says "works". If not, try reinstalling Node again
 
