@@ -3,7 +3,7 @@
 Templates have some advantages over direct DOM manipulation. Leverage those strengths in your blogging system!
 
 ## User Stories
- - As a developer, I want to declare templates for articles, so that I can build new articles more easily.
+ 1. As a developer, I want to declare templates for articles, so that I can build new articles more easily.
  - As a developer, I want to follow SMACSS organization, so that I know where to look for creating and editing styles.
 
 
