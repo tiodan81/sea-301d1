@@ -4,7 +4,7 @@ Today we will work on adding sigle-page tabs to the blog.  We will also add the 
 
 We will use jQuery events to make this happen.
 
-## User Stories for Class 2
+## User Stories
   - As a reader, I want articles truncated to the first paragraph so that I can easily scroll though the whole list.
   - As a reader, I want to click the "Read On" button so that I can see the entire article.
   - As an author, I want my articles filtered by name so that readers can find all my posts.
