@@ -4,6 +4,7 @@
 
 - You will create a static blog site, to represent your personal online presence.
 - Please use the included file: [blogArticles.js](blogArticles.js), that adds an array of ready-to-use blog posts to a `blog` JS object (that you will have to create).
+- Add the [.eslintrc](https://github.com/codefellows/sea-301d1/blob/master/.eslintrc) config file to the root of your blog project repo.
 
 ## User Stories
 Let these user stories guide your development:
