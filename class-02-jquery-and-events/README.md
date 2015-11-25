@@ -18,7 +18,7 @@ We will use jQuery events to make this happen.
   - Add your filters to the Nav section.
   - Factor out any helper functions to a `Util` object, perhaps in a util.js file.
   - Do as much work as you can with advanced selectors, rather than littering your markup with classes and ids.
-  - When classes and IDs are needed, pick semantic names. There is to be no `$('#content .content')` nonesense!
+  - When classes and IDs are needed, pick semantic names. There is to be no `$('#content .content')` nonsense!
   - When one filter is selected, it should reset the other filter (eg: it should not AND them).
   - Add color and icons where appropriate.
   - Your blog should end up looking [something like this](http://hijk.it/image/1C3V1S1r3H1n/Screen%20Shot%202015-11-23%20at%2012.21.45%20PM.png).
