@@ -22,3 +22,8 @@ We will use jQuery events to make this happen.
   - When one filter is selected, it should reset the other filter (eg: it should not AND them).
   - Add color and icons where appropriate.
   - Your blog should end up looking [something like this](http://hijk.it/image/1C3V1S1r3H1n/Screen%20Shot%202015-11-23%20at%2012.21.45%20PM.png).
+
+## Helpful Resources
+ - jQuery Cheat sheet: http://oscarotero.com/jquery/
+ - Event Reference: https://developer.mozilla.org/en-US/docs/Web/Events
+ - W3C RFC: http://www.w3.org/TR/DOM-Level-2-Events/events.html

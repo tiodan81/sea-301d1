@@ -11,3 +11,7 @@ Templates have some advantages over direct DOM manipulation. Leverage those stre
  - Add Handlebars to your blogging system.
  - Organize your CSS code according to SMACSS.
  -
+
+## Helpful Resources
+ - Handlebars: http://handlebarsjs.com
+ - SMACSS: https://smacss.com/

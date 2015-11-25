@@ -12,3 +12,7 @@ Let's develop some responsive super-powers. Follow along with these user stories
  - Use mobile-first design principles when adding CSS.
  - Add new styles in media queries as needed to make the page look good on desktop screens.
  - For bonus points, include styles for tablet displays.
+
+## Helpful Resources
+ - Shay Howe's Intro: http://learn.shayhowe.com/advanced-html-css/responsive-web-design/
+ - Dale Sande's RWD: http://www.anotheruiguy.com/ux-design-dev/_book/rwd/README.html

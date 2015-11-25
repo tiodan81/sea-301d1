@@ -21,3 +21,8 @@ Let these user stories guide your development:
   - Your Article prototype should have a `.toHtml()` function that adds new data to the DOM.
   - Add basic styles: a css reset, content in a single centered column, reasonable margins, etc.
   - Your blog should end up looking [something like this](http://hijk.it/image/1l402M1Y0q3K/Screen%20Shot%202015-11-23%20at%2012.19.46%20PM.png).
+
+## Helpful Resources
+ - jQuery Cheat sheet: http://oscarotero.com/jquery/
+ - jQuery "Basics" course: https://teamtreehouse.com/library/jquery-basics
+ - 
