@@ -16,3 +16,4 @@ Let's develop some responsive super-powers. Follow along with these user stories
 ## Helpful Resources
  - Shay Howe's Intro: http://learn.shayhowe.com/advanced-html-css/responsive-web-design/
  - Dale Sande's RWD: http://www.anotheruiguy.com/ux-design-dev/_book/rwd/README.html
+ - Example responsive hamburger: http://www.sitepoint.com/pure-css-off-screen-navigation-menu/ 

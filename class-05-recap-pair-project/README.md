@@ -27,3 +27,7 @@ We'll use a special html page, not linked from the main page, that will allow yo
  - Verify that your exported data can be copy/pasted into `blogArticles.js` to be published.
  - Integrate libraries to help with markdown and syntax highlighting.
  - Bonus points if the new article page is responsive!
+
+## Helpful Resources
+ - HTML -> Markdown conversion: https://github.com/chjj/marked
+ - Syntax highlighting: https://github.com/isagalaev/highlight.js

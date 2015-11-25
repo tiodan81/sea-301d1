@@ -27,3 +27,5 @@ We will use jQuery events to make this happen.
  - jQuery Cheat sheet: http://oscarotero.com/jquery/
  - Event Reference: https://developer.mozilla.org/en-US/docs/Web/Events
  - W3C RFC: http://www.w3.org/TR/DOM-Level-2-Events/events.html
+ - Color selection help: https://coolors.co
+ - Color selection help: http://paletton.com
