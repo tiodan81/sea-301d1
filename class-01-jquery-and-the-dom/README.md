@@ -11,7 +11,7 @@ Let these user stories guide your development:
  1. As a developer, I want my site to use valid and semantic markup, so that employers will love me.
  - As a reader, I want the blog to show most recent articles on top so that I can easily read the latest.
  - As a reader, I want relative timestamps to give me a idea of how many days ago something was written.
- - As an author, I want my name linked to my site, so that readers can learn more about me.
+ - As an author, I want my name linked to my social feed, so that readers can follow me, and I can build my audience.
  - As a reader, I want the site to look reasonable, so that I can read it on any device.
 
 ## Technical Requirements and Grading Rubric
@@ -26,4 +26,4 @@ Let these user stories guide your development:
 ## Helpful Resources
  - jQuery Cheat sheet: http://oscarotero.com/jquery/
  - jQuery "Basics" course: https://teamtreehouse.com/library/jquery-basics
- - 
+ -
