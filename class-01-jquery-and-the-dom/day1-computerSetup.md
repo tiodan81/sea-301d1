@@ -12,7 +12,7 @@
   
   To install Node, open your Terminal, and enter:
   
-  `apt-get install node`
+  `apt-get install nodejs`
 
   **Mac instructions**
   
