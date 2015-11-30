@@ -7,12 +7,13 @@
   Atom's [documentation](https://atom.io/docs/latest) is top-notch. Go check it out. Make sure you're looking at the docs for the latest version.
 
 ## Install Node
+  *Note* If you get an error while installing these packages such as "try again as root/administrator", you may need to use the `sudo` command to get administrator access. For example `sudo apt-get install nodejs`.
 
   **Linux instructions**
   
   To install Node, open your Terminal, and enter:
   
-  `apt-get install node`
+  `apt-get install nodejs`
 
   **Mac instructions**
   
