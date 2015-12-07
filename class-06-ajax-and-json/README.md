@@ -18,3 +18,13 @@ Asynchronous connections and standardized data formats? Persistent storage for e
  - Be thoughtful when functions are executed asynchronously. This is a major source of bugs!
  - Keep a local cache of article data. Ensure you are only requesting the full blogArticles.json file when you need an update.
  - Log to the console on every cache hit and cache miss.
+
+## Lecture Slides
+ - [Typography](https://docs.google.com/presentation/d/12lziyHjqGJ_dKrJpmGJzFonXsUkx2kd2ckoRBhBoeX8/edit?usp=sharing)
+
+## Useful Resources
+ - [Google Fonts](www.google.com/fonts)
+ - [Treehouse: Web Typography Course](teamtreehouse.com/library/web-typography)
+ - [Pracital Topography Site](practicaltypography.com/)
+ - [A More Modern Scale for Web Typography via typecast.com](typecast.com/blog/a-more-modern-scale-for-web-typography)
+ - [Type Scale Tool via type-scale.com](type-scale.com)
