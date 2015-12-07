@@ -4,10 +4,10 @@ Asynchronous connections and standardized data formats? Persistent storage for e
 
 ## User Stories
  1. As a developer, I want to use the same template for Articles, so that I don't have to update it in 2 places.
- - As a reader, I want only want to download all the blog posts if there are changes, so that the page is faster and everyone saves bandwidth.
+ - As a reader, I only want to download all the blog posts if there are changes, so that the page is faster and everyone saves bandwidth.
  - As a reader, I want the site to have good typography, so that it's easy on the eyes.
 
-### Bonus Points
+### Bonus Stories (2 point each)
  - As a reader, I want the app to remember what tab I'm on, so that if I refresh, I'm not lost.
  - As an author, I want the data in the New Article form to survive a refresh, so that if I go away and come back, my draft is still there.
 
