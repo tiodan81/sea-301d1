@@ -3,11 +3,14 @@
 Asynchronous connections and standardized data formats? Persistent storage for each client? This all sounds like a serious upgrade to our application logic! Let's see what we can do with our app, once we apply these concepts.
 
 ## User Stories
- 1. As a reader, I want the app to remember what tab I'm on, so that if I refresh, I'm not lost.
- - As an author, I want the data in the New Article form to survive a refresh, so that if I go away and come back, my draft is still there.
+ 1. As a developer, I want to use the same template for Articles, so that I don't have to update it in 2 places.
  - As a reader, I want only want to download all the blog posts if there are changes, so that the page is faster and everyone saves bandwidth.
- - As a developer, I want to use the same template for Articles, so that I don't have to update it in 2 places.
  - As a reader, I want the site to have good typography, so that it's easy on the eyes.
+
+### Bonus Points
+ - As a reader, I want the app to remember what tab I'm on, so that if I refresh, I'm not lost.
+ - As an author, I want the data in the New Article form to survive a refresh, so that if I go away and come back, my draft is still there.
+
 
 ## Technical Requirements and Grading Rubric
  - Continue to follow good SMACSS principles.
