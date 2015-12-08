@@ -9,9 +9,9 @@ console.log(xs);   // xs = []
 
 ys = xs.concat(1);
 zs = ys.concat(2);
-as = zs.concat(3);
+items = zs.concat(3);
 
-console.log(as);  // ys = [1,2,3]
+console.log(items);  // items = [1,2,3]
 
 function removeItem(list, index) {
   return list
@@ -19,9 +19,9 @@ function removeItem(list, index) {
     .concat( list.slice( index + 1) );
 }
 
-console.log( removeItem( as, 2 ) ); // as = [ 1, 2 ]
+console.log( removeItem( items, 2 ) ); // items = [ 1, 2 ]
 
-console.log( as ); // [ 1, 2, 3 ]
+console.log( items ); // [ 1, 2, 3 ]
 
 function incrementItem(list, index) {
   return list
