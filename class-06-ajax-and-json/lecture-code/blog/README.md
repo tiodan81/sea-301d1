@@ -1,7 +1,5 @@
-## Code 301 Instructor Code repo
+# Code 301 Starter Code
 
-## This repo is for instructors
+If you are unable to implement today's assignment on top of your own project, you can use this code as a starting point.
 
-Please don't share with students as it contains the recommended solutions to the class assignments.
-
-Branches indicate expectation of student progress by class day.
+Recommended: Copy/paste this code into a new repo, and add the work for this day's assignment there. 
