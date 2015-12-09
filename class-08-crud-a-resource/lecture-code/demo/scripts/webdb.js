@@ -67,3 +67,13 @@ webDB.insertRecord = function (a) {
     }
   );
 };
+
+webDB.execute = function (sql, callback) {
+  callback = callback || function() {};
+  html5sql.process(
+    sql,
+    function (tx, result, resultArray) {
+      callback(resultArray);
+    }
+  );
+};
