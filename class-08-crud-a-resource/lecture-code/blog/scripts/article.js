@@ -29,8 +29,8 @@ Article.prototype.insertRecord = function(callback) {
   // insert article record into database
   webDB.execute(
     // TODO: Add SQL here...
-    ,
-    callback
+    //,
+    //callback
   );
 };
 
@@ -38,8 +38,8 @@ Article.prototype.updateRecord = function(callback) {
   //update article record in databse
   webDB.execute(
     // TODO: Add SQL here...
-    ,
-    callback
+    //,
+    //callback
   );
 };
 
@@ -47,8 +47,8 @@ Article.prototype.deleteRecord = function(callback) {
   // Delete article record in database
   webDB.execute(
     // TODO: Add SQL here...
-    ,
-    callback
+    //,
+    //callback
   );
 };
 
@@ -56,7 +56,7 @@ Article.prototype.truncateTable = function(callback) {
   // Delete all records from given table.
   webDB.execute(
     // TODO: Add SQL here...
-    ,
-    callback
+    //,
+    //callback
   );
 };

@@ -21,7 +21,7 @@ blog.fetchArticles = function(data, message, xhr) {
     // Remove all prior articles from the DB, and from blog:
     blog.articles = [];
     webDB.execute(
-      // TODO: Add SQL here...
+      'DELETE FROM articles;'
       , blog.fetchJSON);
   } else {
     console.log('cache hit!');
@@ -35,17 +35,23 @@ blog.fetchJSON = function() {
 
 // Drop old records and insert new into db and blog object:
 blog.updateFromJSON = function (data) {
+  console.log(data);
   // Iterate over new article JSON:
   data.forEach(function(item) {
     // Instantiate an article based on item from JSON:
     var article = new Article(item);
-
+    console.log(article.title);
     // Add the article to blog.articles
     blog.articles.push(article);
 
     // Cache the article in DB
-    // TODO: Trigger SQL here...
-  });
+    webDB.execute([
+      {
+        sql: "INSERT INTO articles (title, category, author, authorUrl, publishedOn, body) VALUES (?, ?, ?, ?, ?, ?)",
+        data: [item.title, item.category, item.author, item.authorUrl, item.publishedOn, item.body]
+      }
+    ]
+  )});
   blog.initArticles();
 };
 
@@ -54,8 +60,7 @@ blog.fetchFromDB = function(callback) {
 
   // Fetch all articles from db.
   webDB.execute(
-    // TODO: Add SQL here...
-    ,
+    'SELECT * FROM articles',
     function (resultArray) {
       resultArray.forEach(function(ele) {
         blog.articles.push(new Article(ele));
@@ -87,10 +92,11 @@ blog.render = function() {
 
   // Get all articles from the DB to render:
   webDB.execute(
-    // TODO: Add SQL here...
-    , function(results) {
-    results.forEach(function(ele) { blog.appendArticle(ele); });
-  });
+    'SELECT * FROM articles',
+    function(results) {
+      results.forEach(function(ele) { blog.appendArticle(ele); });
+    }
+  );
 
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
@@ -215,18 +221,18 @@ blog.checkForEditArticle = function () {
   }
 };
 
-blog.loadArticleById = function (id) {
-  // Grab just the one article from the DB
-  webDB.execute(
-    // TODO: Add SQL here...
-    ,
-    function (resultArray) {
-      if (resultArray.length === 1) {
-        blog.fillFormWithArticle(resultArray[0]);
-      }
-    }
-  );
-};
+// blog.loadArticleById = function (id) {
+//   // Grab just the one article from the DB
+//   webDB.execute(
+//     // TODO: Add SQL here...
+//     ,
+//     function (resultArray) {
+//       if (resultArray.length === 1) {
+//         blog.fillFormWithArticle(resultArray[0]);
+//       }
+//     }
+//   );
+// };
 
 blog.fillFormWithArticle = function (a) {
   var checked = a.publishedOn ? true : false;
@@ -318,9 +324,9 @@ blog.handleDeleteButton = function () {
   $('#delete-article-btn').on('click', function () {
     var id = $(this).data('article-id');
     // Remove this record from the DB:
-    webDB.execute(
-      // TODO: Add SQL here...
-      , blog.clearAndFetch);
-    blog.clearNewForm();
+    // webDB.execute(
+    //   // TODO: Add SQL here...
+    //   , blog.clearAndFetch);
+    // blog.clearNewForm();
   });
 };
