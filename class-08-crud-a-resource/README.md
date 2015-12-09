@@ -10,11 +10,12 @@ Databases power web applications everywhere by enabling them to persist, modify,
  - As an author, I want to have draft posts, so that I can save my writing without publishing.
 
 ## Technical Requirements and Grading Rubric
+ - Keep your code linted, as you work. 
  - Continue to make good use of SMACSS principles.
  - Utilize webSQL to load and store articles information from a JSON source.
  - Use browser query strings to determine if admin mode is enabled.
  - Ensure that draft posts are not viewable on index.html unless admin mode is enabled.
- 
+
 ## Useful resources.
  - [SQLBolt](http://sqlbolt.com/) -- Interactive SQL Tutorial
  - [WebSQL introduction and example](http://html5doctor.com/introducing-web-sql-databases/)
