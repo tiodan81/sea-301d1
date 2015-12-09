@@ -6,7 +6,6 @@ $(function() {
   blog.fetchFromDB();
 
   blog.initArticleEditorPage();
-  blog.watchNewForm();
 
   blog.handleAddButton();
   blog.handleUpdateButton();
