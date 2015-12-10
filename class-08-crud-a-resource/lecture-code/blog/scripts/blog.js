@@ -46,7 +46,7 @@ blog.updateFromJSON = function (data) {
     // Cache the article in DB
     webDB.execute([
       {
-        sql: "INSERT INTO articles (title, category, author, authorUrl, publishedOn, body) VALUES (?, ?, ?, ?, ?, ?)",
+        sql: "INSERT INTO articles (title, category, author, authorUrl, publishedOn, markdown) VALUES (?, ?, ?, ?, ?, ?)",
         data: [item.title, item.category, item.author, item.authorUrl, item.publishedOn, item.markdown]
       }
     ]
@@ -303,8 +303,8 @@ blog.handleAddButton = function () {
     // Insert this new record into the DB, then callback to blog.clearAndFetch
     webDB.execute([
       {
-        sql: "INSERT INTO articles (title, category, author, authorUrl, publishedOn, body) VALUES (?, ?, ?, ?, ?, ?)",
-        data: [article.title, article.category, article.author, article.authorUrl, article.publishedOn, article.body]
+        sql: "INSERT INTO articles (title, category, author, authorUrl, publishedOn, markdown) VALUES (?, ?, ?, ?, ?, ?)",
+        data: [article.title, article.category, article.author, article.authorUrl, article.publishedOn, article.markdown]
       }
     ], blog.clearAndFetch)
   });
@@ -317,9 +317,12 @@ blog.handleUpdateButton = function () {
     article.id = id;
 
     // Save changes to the DB:
-    // TODO: Trigger SQL here...
-
-    blog.clearAndFetch();
+    webDB.execute([
+      {
+        sql: "UPDATE articles SET title=?, category=?, author=?, authorUrl=?, publishedOn=?, markdown=? WHERE id=?",
+        data: [article.title, article.category, article.author, article.authorUrl, article.publishedOn, article.markdown, id]
+      }
+    ], blog.clearAndFetch)
   });
 };
 
@@ -327,9 +330,10 @@ blog.handleDeleteButton = function () {
   $('#delete-article-btn').on('click', function () {
     var id = $(this).data('article-id');
     // Remove this record from the DB:
-    // webDB.execute(
-    //   // TODO: Add SQL here...
-    //   , blog.clearAndFetch);
-    // blog.clearNewForm();
+    webDB.execute(
+      'DELETE FROM articles WHERE id='+id
+      // TODO: Add SQL here...
+      , blog.clearAndFetch);
+    blog.clearNewForm();
   });
 };
