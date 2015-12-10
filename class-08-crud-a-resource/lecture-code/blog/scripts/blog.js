@@ -6,7 +6,7 @@ blog.loadArticles = function() {
     Article.prototype.template = Handlebars.compile(data);
     $.ajax({
       type: 'HEAD',
-      url: 'scripts/blogArticles.json',
+      url: 'scripts/hackerIpsum.json',
       success: blog.fetchArticles
     });
   });
@@ -30,7 +30,7 @@ blog.fetchArticles = function(data, message, xhr) {
 };
 
 blog.fetchJSON = function() {
-  $.getJSON('scripts/blogArticles.json', blog.updateFromJSON);
+  $.getJSON('scripts/hackerIpsum.json', blog.updateFromJSON);
 };
 
 // Drop old records and insert new into db and blog object:
@@ -40,7 +40,6 @@ blog.updateFromJSON = function (data) {
   data.forEach(function(item) {
     // Instantiate an article based on item from JSON:
     var article = new Article(item);
-    console.log(article.title);
     // Add the article to blog.articles
     blog.articles.push(article);
 
@@ -48,7 +47,7 @@ blog.updateFromJSON = function (data) {
     webDB.execute([
       {
         sql: "INSERT INTO articles (title, category, author, authorUrl, publishedOn, body) VALUES (?, ?, ?, ?, ?, ?)",
-        data: [item.title, item.category, item.author, item.authorUrl, item.publishedOn, item.body]
+        data: [item.title, item.category, item.author, item.authorUrl, item.publishedOn, item.markdown]
       }
     ]
   )});
@@ -221,18 +220,18 @@ blog.checkForEditArticle = function () {
   }
 };
 
-// blog.loadArticleById = function (id) {
-//   // Grab just the one article from the DB
-//   webDB.execute(
-//     // TODO: Add SQL here...
-//     ,
-//     function (resultArray) {
-//       if (resultArray.length === 1) {
-//         blog.fillFormWithArticle(resultArray[0]);
-//       }
-//     }
-//   );
-// };
+blog.loadArticleById = function (id) {
+  // Grab just the one article from the DB
+  webDB.execute(
+    'SELECT * FROM articles WHERE id='+id
+    ,
+    function (resultArray) {
+      if (resultArray.length === 1) {
+        blog.fillFormWithArticle(resultArray[0]);
+      }
+    }
+  );
+};
 
 blog.fillFormWithArticle = function (a) {
   var checked = a.publishedOn ? true : false;
@@ -300,10 +299,14 @@ blog.clearAndFetch = function () {
 
 blog.handleAddButton = function () {
   $('#add-article-btn').on('click', function (e) {
-    var article = blog.buildArticle()
+    var article = blog.buildArticle();
     // Insert this new record into the DB, then callback to blog.clearAndFetch
-    // TODO: Trigger SQL here...
-
+    webDB.execute([
+      {
+        sql: "INSERT INTO articles (title, category, author, authorUrl, publishedOn, body) VALUES (?, ?, ?, ?, ?, ?)",
+        data: [article.title, article.category, article.author, article.authorUrl, article.publishedOn, article.body]
+      }
+    ], blog.clearAndFetch)
   });
 };
 
